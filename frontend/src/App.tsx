@@ -36,7 +36,10 @@ const AppContent: React.FC = () => {
     init();
   }, []);
 
+  const { isAuthenticated } = useAuth();
+
   const handleTriggerToast = (xpGained: number, carbonSavedGrams: number) => {
+    if (!isAuthenticated) return;
     setToast({
       id: String(Date.now()),
       xpGained,

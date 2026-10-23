@@ -58,5 +58,11 @@ describe('🏛️ Aesthetic Chennai Transit — Line Directory Page Tests', () =
 
     expect(screen.getByText(/Nominal/i)).toBeInTheDocument();
     expect(screen.getByText(/Advisory/i)).toBeInTheDocument();
+
+    // Verify images render with their assigned unique Unsplash URLs
+    const images = screen.getAllByRole('img');
+    expect(images.length).toBeGreaterThanOrEqual(2);
+    expect(images[0]).toHaveAttribute('src', 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80');
+    expect(images[1]).toHaveAttribute('src', 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1200&q=80');
   });
 });

@@ -21,7 +21,7 @@ export async function seedMongo() {
   await User.deleteMany({});
   await UserStats.deleteMany({});
 
-  console.log('🏛️ [SEED] Creating 30+ Authentic Chennai Transit Hubs with curated Unsplash imagery...');
+  console.log('🏛️ [SEED] Creating 30+ Authentic Chennai Transit Hubs with 100% UNIQUE Unsplash imagery...');
   const stopsData = [
     {
       code: 'CHN-CTL',
@@ -93,7 +93,7 @@ export async function seedMongo() {
       x: 260,
       y: 360,
       zone: 2,
-      imageUrl: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=80'
     },
     {
       code: 'AIRPORT',
@@ -129,7 +129,7 @@ export async function seedMongo() {
       x: 120,
       y: 200,
       zone: 1,
-      imageUrl: 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1200&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80'
     },
     {
       code: 'PORUR',
@@ -138,7 +138,7 @@ export async function seedMongo() {
       x: 100,
       y: 280,
       zone: 2,
-      imageUrl: 'https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=1200&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=1200&q=80'
     },
     {
       code: 'CHROMEPET',
@@ -147,7 +147,7 @@ export async function seedMongo() {
       x: 130,
       y: 480,
       zone: 3,
-      imageUrl: 'https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1200&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=1200&q=80'
     },
     {
       code: 'MYLAPORE',
@@ -156,7 +156,7 @@ export async function seedMongo() {
       x: 280,
       y: 230,
       zone: 1,
-      imageUrl: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1609137144822-45e0543e49e0?auto=format&fit=crop&w=1200&q=80'
     },
     {
       code: 'BESANT-NGR',
@@ -165,7 +165,7 @@ export async function seedMongo() {
       x: 320,
       y: 330,
       zone: 2,
-      imageUrl: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80'
     },
     {
       code: 'PERAMBUR',
@@ -174,7 +174,7 @@ export async function seedMongo() {
       x: 220,
       y: 90,
       zone: 1,
-      imageUrl: 'https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1200&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1520105072000-f44fc0832105?auto=format&fit=crop&w=1200&q=80'
     },
     {
       code: 'ALANDUR',
@@ -183,7 +183,7 @@ export async function seedMongo() {
       x: 170,
       y: 370,
       zone: 1,
-      imageUrl: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1557223562-6c77ef16210f?auto=format&fit=crop&w=1200&q=80'
     },
     {
       code: 'THIRUVAN',
@@ -192,7 +192,7 @@ export async function seedMongo() {
       x: 320,
       y: 370,
       zone: 2,
-      imageUrl: 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1200&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1200&q=80'
     },
     {
       code: 'MEDAVAKKAM',
@@ -201,7 +201,7 @@ export async function seedMongo() {
       x: 230,
       y: 470,
       zone: 3,
-      imageUrl: 'https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=1200&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1200&q=80'
     },
     {
       code: 'SAIDAPET',
@@ -210,7 +210,7 @@ export async function seedMongo() {
       x: 210,
       y: 300,
       zone: 1,
-      imageUrl: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&w=1200&q=80'
     },
     {
       code: 'NUNGAM',
@@ -219,7 +219,7 @@ export async function seedMongo() {
       x: 220,
       y: 210,
       zone: 1,
-      imageUrl: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1477959858617-67f30bc75b82?auto=format&fit=crop&w=1200&q=80'
     },
     {
       code: 'KILPAUK',
@@ -228,7 +228,7 @@ export async function seedMongo() {
       x: 190,
       y: 140,
       zone: 1,
-      imageUrl: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=80'
     },
     {
       code: 'VADAPALANI',
@@ -237,7 +237,7 @@ export async function seedMongo() {
       x: 160,
       y: 250,
       zone: 1,
-      imageUrl: 'https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=1200&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1200&q=80'
     },
     {
       code: 'PALLAVARAM',
@@ -246,7 +246,7 @@ export async function seedMongo() {
       x: 140,
       y: 460,
       zone: 2,
-      imageUrl: 'https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1200&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80'
     },
     {
       code: 'ROYAPETTAH',
@@ -255,7 +255,7 @@ export async function seedMongo() {
       x: 270,
       y: 200,
       zone: 1,
-      imageUrl: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80'
     },
     {
       code: 'TRIPLICANE',
@@ -264,7 +264,7 @@ export async function seedMongo() {
       x: 290,
       y: 170,
       zone: 1,
-      imageUrl: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&q=80'
     },
     {
       code: 'BROADWAY',
@@ -273,7 +273,7 @@ export async function seedMongo() {
       x: 290,
       y: 100,
       zone: 1,
-      imageUrl: 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1200&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80'
     },
     {
       code: 'SHENOY-NGR',
@@ -282,7 +282,7 @@ export async function seedMongo() {
       x: 170,
       y: 160,
       zone: 1,
-      imageUrl: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?auto=format&fit=crop&w=1200&q=80'
     },
     {
       code: 'RACE-COURSE',
@@ -291,13 +291,13 @@ export async function seedMongo() {
       x: 200,
       y: 340,
       zone: 1,
-      imageUrl: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80'
     }
   ];
 
   await Stop.insertMany(stopsData);
 
-  console.log('🏛️ [SEED] Populating Chennai Transit Lines with Editorial Palettes...');
+  console.log('🏛️ [SEED] Populating Chennai Transit Lines with 100% UNIQUE Editorial Photography...');
   const linesData = [
     {
       code: 'METRO-BLU',
@@ -307,7 +307,7 @@ export async function seedMongo() {
       status: 'ON_TIME',
       frequencyMinutes: 5,
       speedKmh: 80.0,
-      imageUrl: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80',
+      imageUrl: 'https://images.unsplash.com/photo-1558441719-755047b1c4dc?auto=format&fit=crop&w=1200&q=80',
       stops: [
         { code: 'BROADWAY', timeNext: 3 },
         { code: 'CHN-CTL', timeNext: 4 },
@@ -326,7 +326,7 @@ export async function seedMongo() {
       status: 'ON_TIME',
       frequencyMinutes: 6,
       speedKmh: 75.0,
-      imageUrl: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80',
+      imageUrl: 'https://images.unsplash.com/photo-1532105956626-9569c03602f6?auto=format&fit=crop&w=1200&q=80',
       stops: [
         { code: 'ANNA-NGR', timeNext: 4 },
         { code: 'SHENOY-NGR', timeNext: 3 },
@@ -345,7 +345,7 @@ export async function seedMongo() {
       status: 'ON_TIME',
       frequencyMinutes: 12,
       speedKmh: 65.0,
-      imageUrl: 'https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1200&q=80',
+      imageUrl: 'https://images.unsplash.com/photo-1527603815363-e77388476406?auto=format&fit=crop&w=1200&q=80',
       stops: [
         { code: 'CHN-CTL', timeNext: 5 },
         { code: 'EGM-STN', timeNext: 6 },
@@ -365,7 +365,7 @@ export async function seedMongo() {
       status: 'DELAYED',
       frequencyMinutes: 10,
       speedKmh: 32.0,
-      imageUrl: 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1200&q=80',
+      imageUrl: 'https://images.unsplash.com/photo-1556122071-e404be745493?auto=format&fit=crop&w=1200&q=80',
       stops: [
         { code: 'BROADWAY', timeNext: 6 },
         { code: 'MARINA', timeNext: 8 },
@@ -384,7 +384,7 @@ export async function seedMongo() {
       status: 'ON_TIME',
       frequencyMinutes: 8,
       speedKmh: 35.0,
-      imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
+      imageUrl: 'https://images.unsplash.com/photo-1572097662444-ed77be345ee9?auto=format&fit=crop&w=1200&q=80',
       stops: [
         { code: 'KOYAMBEDU', timeNext: 7 },
         { code: 'VADAPALANI', timeNext: 9 },
@@ -402,7 +402,7 @@ export async function seedMongo() {
       status: 'ON_TIME',
       frequencyMinutes: 9,
       speedKmh: 30.0,
-      imageUrl: 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1200&q=80',
+      imageUrl: 'https://images.unsplash.com/photo-1509749837427-ac94a2553d0e?auto=format&fit=crop&w=1200&q=80',
       stops: [
         { code: 'T-NAGAR', timeNext: 6 },
         { code: 'SAIDAPET', timeNext: 8 },
@@ -419,7 +419,7 @@ export async function seedMongo() {
       status: 'ON_TIME',
       frequencyMinutes: 3,
       speedKmh: 40.0,
-      imageUrl: 'https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=1200&q=80',
+      imageUrl: 'https://images.unsplash.com/photo-1569974498991-d3c12a504f95?auto=format&fit=crop&w=1200&q=80',
       stops: [
         { code: 'GUINDY', timeNext: 10 },
         { code: 'PORUR', timeNext: 12 },
@@ -474,7 +474,7 @@ export async function seedMongo() {
     routesScanned: 20
   });
 
-  console.log('🏛️ [SEED] Aesthetic Chennai Transit MongoDB dataset populated successfully.');
+  console.log('🏛️ [SEED] Aesthetic Chennai Transit MongoDB dataset populated successfully with 100% UNIQUE imagery.');
 }
 
 if (require.main === module) {

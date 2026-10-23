@@ -18,7 +18,7 @@ export const GamificationToast: React.FC<GamificationToastProps> = ({ toast, onC
     if (toast) {
       const timer = setTimeout(() => {
         onClose();
-      }, 5000);
+      }, 3000);
       return () => clearTimeout(timer);
     }
   }, [toast, onClose]);
@@ -44,7 +44,7 @@ export const GamificationToast: React.FC<GamificationToastProps> = ({ toast, onC
               Itinerary Recorded
             </div>
             <div className="text-sm font-sans font-medium text-white tracking-normal">
-              Route Selected: +{toast.xpGained} XP. Carbon Saved: {toast.carbonSavedGrams.toLocaleString()}g.
+              Route Selected: +{toast.xpGained} XP. Carbon Saved: {toast.carbonSavedGrams}g.
             </div>
             <div className="text-xs text-[#8C8C8C]">
               Updated to your personal Chennai mobility balance.

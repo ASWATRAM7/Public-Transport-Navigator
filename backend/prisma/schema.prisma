@@ -1,0 +1,69 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Line {
+  id               String   @id @default(cuid())
+  code             String   @unique
+  name             String
+  color            String
+  type             String   @default("METRO") // METRO, BUS, TRAIN, AUTO
+  status           String   @default("ON_TIME") // ON_TIME, DELAYED, MAINTENANCE
+  frequencyMinutes Int      @default(5)
+  speedKmh         Float    @default(80.0)
+  imageUrl         String?
+  routes           Route[]
+  createdAt        DateTime @default(now())
+}
+
+model Stop {
+  id         String      @id @default(cuid())
+  code       String      @unique
+  name       String
+  sector     String
+  x          Float
+  y          Float
+  zone       Int         @default(1)
+  imageUrl   String?
+  routeStops RouteStop[]
+  createdAt  DateTime    @default(now())
+}
+
+model Route {
+  id         String      @id @default(cuid())
+  lineId     String
+  direction  String      @default("OUTBOUND")
+  line       Line        @relation(fields: [lineId], references: [id], onDelete: Cascade)
+  routeStops RouteStop[]
+  createdAt  DateTime    @default(now())
+}
+
+model RouteStop {
+  id                      String   @id @default(cuid())
+  routeId                 String
+  stopId                  String
+  orderIndex              Int
+  travelTimeToNextMinutes Int      @default(3)
+  route                   Route    @relation(fields: [routeId], references: [id], onDelete: Cascade)
+  stop                    Stop     @relation(fields: [stopId], references: [id], onDelete: Cascade)
+
+  @@unique([routeId, stopId])
+  @@index([routeId, orderIndex])
+}
+
+model UserStats {
+  id               String   @id @default(cuid())
+  username         String   @unique @default("ChennaiTraveler_01")
+  clearanceLevel   Int      @default(2)
+  xp               Int      @default(220)
+  carbonSavedGrams Float    @default(5120.0)
+  streakDays       Int      @default(8)
+  routesScanned    Int      @default(16)
+  lastActive       DateTime @default(now())
+  createdAt        DateTime @default(now())
+}

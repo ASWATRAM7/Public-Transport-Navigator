@@ -10,11 +10,11 @@ async function bootstrap() {
     console.warn(`[SERVER] Database bootstrap warning: ${err.message}. Server starting anyway.`);
   }
 
-  app.listen(PORT, () => {
+  app.listen(Number(PORT), '0.0.0.0', () => {
     console.log(`🌿 [CHENNAI-TRANSIT] Engine listening on port ${PORT}`);
-    console.log(`🌿 [CHENNAI-TRANSIT] Healthcheck: http://localhost:${PORT}/health`);
-    console.log(`🌿 [CHENNAI-TRANSIT] Stops API:   http://localhost:${PORT}/api/stops`);
-    console.log(`🌿 [CHENNAI-TRANSIT] Auth API:    http://localhost:${PORT}/api/auth/login`);
+    console.log(`🌿 [CHENNAI-TRANSIT] Healthcheck: http://127.0.0.1:${PORT}/health`);
+    console.log(`🌿 [CHENNAI-TRANSIT] Stops API:   http://127.0.0.1:${PORT}/api/stops`);
+    console.log(`🌿 [CHENNAI-TRANSIT] Auth API:    http://127.0.0.1:${PORT}/api/auth/login`);
   });
 }
 

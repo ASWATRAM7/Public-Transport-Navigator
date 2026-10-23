@@ -1,0 +1,23 @@
+{
+  "name": "chennai-transit-navigator",
+  "version": "1.0.0",
+  "description": "Aesthetic Chennai Transit — An Editorial Guide to Metropolitan Navigation",
+  "scripts": {
+    "dev": "npx --yes concurrently -k -p \"[{name}]\" -n \"BACKEND,FRONTEND\" -c \"cyan,magenta\" \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "start": "npx --yes concurrently -k -p \"[{name}]\" -n \"BACKEND,FRONTEND\" -c \"cyan,magenta\" \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build": "npm --prefix backend run build && npm --prefix frontend run build",
+    "test": "npm --prefix backend test && npm --prefix frontend test"
+  },
+  "keywords": [
+    "transit",
+    "chennai",
+    "metro",
+    "mrtc",
+    "editorial",
+    "agile"
+  ],
+  "author": "ASWATRAM7",
+  "license": "MIT"
+}

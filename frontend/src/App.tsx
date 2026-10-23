@@ -11,7 +11,7 @@ import { AboutManifestoPage } from './pages/AboutManifestoPage';
 import { LoginPage } from './pages/LoginPage';
 import { RegisterPage } from './pages/RegisterPage';
 import { ProtectedRoute } from './components/ProtectedRoute';
-import { AuthProvider } from './context/AuthContext';
+import { AuthProvider, useAuth } from './context/AuthContext';
 import { Stop, UserStats } from './types/transit';
 import { fetchStops, fetchStats } from './services/api';
 
